@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const arr = [
+        {
+          id: 11,
+          title: "1",
+          completed: false,
+          date: "",
+        },
+        {
+          id: 9,
+          title: "321",
+          completed: false,
+          date: "",
+        },
+        {
+          id: 7,
+          title: "3",
+          completed: false,
+          date: "",
+        },
+        {
+          id: 5,
+          title: "321",
+          completed: false,
+          date: "",
+        },
+        {
+          id: 3,
+          title: "321312",
+          completed: false,
+          date: "",
+        },
+        {
+          id: 1,
+          title: "哈哈哈哈哈哈",
+          completed: false,
+          date: "",
+        },
+      ];
+      const def = {};
+      def.promise = new Promise((resolve, reject) => {
+        def.resolve = resolve;
+        def.reject = reject;
+      })
+        .then((res) => {
+          console.log("进入then,resolved");
+        })
+        .catch((err) => {
+          console.log("进入catch,rejected");
+        });
+      console.log(def);
+      //案例4
+      f1();
+      console.log(c);
+      console.log(b);
+      console.log(a);
+      function f1() {
+        var a = (b = c = 9);
+        console.log(a);
+        console.log(b);
+        console.log(c);
+      }
+    </script>
+  </body>
+</html>
